@@ -1,0 +1,18 @@
+version: "3"
+services:
+  reverseproxy:
+    build:
+      context: .
+    image: yfandino/reverseproxy 
+  backend_user:
+    build:
+      context: ../../backend/user
+    image: yfandino/user
+  backend_feed:
+    build:
+      context: ../../backend/feed  
+    image: yfandino/feed
+  frontend:
+    build:
+      context: ../../frontend  
+    image: yfandino/frontend
