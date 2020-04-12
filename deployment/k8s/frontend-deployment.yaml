@@ -13,7 +13,7 @@ spec:
         api: external        
     spec:
       containers:
-      - image: yfandino/frontend
+      - image: yfandino/frontend:v2
         name: frontend
         imagePullPolicy: Always          
         ports:
